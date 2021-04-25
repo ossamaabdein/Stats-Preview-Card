@@ -1,0 +1,161 @@
+
+body {
+   background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+.image {
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card .left-side {
+    width: 50%;
+    text-align:start;
+    padding: 50px 80px 50px 60px;
+}
+
+.info-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    padding: 50px 10px 50px 0px;
+
+}
+
+.flex-item {
+    align-content: space-between;
+    text-align:start;
+    flex: 1;
+}
+
+.heading {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: small;
+
+}
+
+.stats {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+}
+
+.stats-headings {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: small;
+   color:hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Responvie mobile view*/
+@media (max-width : 375px) and (max-width : 800px) {
+   .card{
+       flex-direction: column-reverse;
+       align-items: center;
+       margin: auto; 
+    }
+
+   .info-flex {
+    flex-direction: column;
+    }
+
+    .flex-item {
+        text-align: center;
+
+    }
+
+    .card .left-side {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .image {
+    width: 100%;
+    background: url(/images/image-header-mobile.jpg);
+    border-radius: 5px 5px 0 0;
+    }
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .paragraph {
+        padding: 20px;
+        font-size: 0.80em;
+    }
+
+    .attribution {
+        margin: 10px;
+    }    
+}
+ 
+    /* Just to add more responsiveness in web-view */
+@media (max-width : 900px) {
+    .card{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto; 
+    }
+ 
+    .info-flex {
+     flex-direction: column;
+    }
+ 
+     .flex-item {
+         text-align: center;
+ 
+    }
+ 
+     .card .left-side {
+     width: 100%;
+     padding: 20px;
+     text-align: center;
+    }
+ 
+     .image {
+     width: 100%;
+     background: url(/images/image-header-mobile.jpg);
+     border-radius: 5px 5px 0 0;
+    }
+ 
+     .heading {
+         font-size: 1.5em;
+    }
+ 
+     .paragraph {
+         padding: 20px;
+         font-size: 0.80em;
+    }
+ 
+     .attribution {
+         margin: 10px;
+    }    
+}
